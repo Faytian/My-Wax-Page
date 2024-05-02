@@ -17,11 +17,11 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Wax'
-description:      'Minimal Exhibitions with Jekyll'
-url:              'https://minicomp.github.io'
-baseurl:          '/wax'
-copyright:        'Example copyright org, 2023'
+title:            'Queer Arts in CN'
+description:      'Project by Fay Tian, New York University'
+url:              'https://faytian.github.io'
+baseurl:          '/queerartcn'
+copyright:        'Content copyright Fay, 2023'
 logo:             '/assets/logo.png'
 default_thumb:    '/assets/default.png'
 
@@ -80,15 +80,14 @@ search:
     index: '/search/index.json' # file the index will get written to
     collections:
       qatar:
-        content: false # whether or not to index page content
+        content: true # whether or not to index page content
         fields: # the metadata fields to index
           - artist
+          - name
           - location
           - label
           - _date
-          - object_type
-          - current_location
-
+          - exhibit_location
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
 # --------------------------------------------------------------
@@ -99,17 +98,17 @@ search:
 menu:
   - label: 'About'
     sub:
-      - label: 'Wax'
+      - label: 'Background'
         link: '/about/'
-      - label: 'Documentation'
-        link: 'https://minicomp.github.io/wiki/wax/'
-      - label: 'Credits'
+      - label: 'Literature Review'
+        link: '/lr/'
+      - label: 'Bibliography'
         link: '/credits/'
-  - label: 'Exhibits'
+  - label: 'Research'
     sub:
-      - label: 'Inline Parallax Image'
+      - label: 'Queer Arts in China'
         link: '/exhibits/a/'
-      - label: 'Inline Image References'
+      - label: 'Queer Artists in China'
         link: '/exhibits/b/'
   - label: 'Browse'
     link: '/collection/'
@@ -125,12 +124,10 @@ menu:
 
 footer:
   links:
-    - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
-    - label: 'Credits'
+    - label: 'Other Project: Femisking'
+      link: 'http://nvxing.hosting.nyu.edu/femisking/'
+    - label: 'Bibliography'
       link: '/credits'
-    - label: 'Wiki'
-      link: 'https://minicomp.github.io/wiki/wax/'
   logos:
     - img: '/img/logo.png'
 
